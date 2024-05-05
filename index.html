@@ -1,0 +1,489 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheltered</title>
+    <link rel="shortcut icon" type="x-icon" href="./src/asd.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <header  class="header">
+        <div style="display: inline-block;">
+          <a href="index.html"> <img class="logo" src="asd.png" alt=""></a> 
+         
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div> 
+        <div></div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#" style="margin: 0;">Blog</a>
+            <a href="./Log in/Index_Login.html">Login</a>
+            <a href="#">Adoption Process</a>
+            <a href="#"> Adoption Qualifications</a>
+            <a href="#">Post a Pet</a>
+        </nav>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+       
+        
+               <div><a href="./Log in/Index_Login.html"><button class="Login">Login</button></a></div>
+    </header>
+    <div class="nav-bg"></div>
+    <script src="script.js"></script>
+
+    
+    
+       
+    
+
+       
+    <section class="section1"> 
+        <div class="div"  data-aos="fade-up">
+     <div class="stpage"> 
+        <div class="container">    
+            <p class="title">I'm Looking to...</p>
+            <h1 class="adopt">ADOPT A DOG</h1>
+
+            <a href="#section2">
+                <button class="sec1button">Your best friend awaits!</button>
+            </a>
+             </div>      
+        <div class="img">
+            <img src="image-removebg-preview (4).png" class="img" alt="">
+        </div>
+      </div>  
+     </div>
+    </section>
+
+
+
+    <section class="section3">
+        <div class="div"  data-aos="fade-up">
+        <div class="stpage"> 
+            
+           <div class="img2">
+               <img src="catto.png" class="img2" alt="">
+           </div>
+
+           <div class="ndcontainer">    
+            <p class="title">I'm Looking to...</p>
+            <h1 class="adopt">ADOPT A CAT</h1>
+            
+            <a href="#section2">
+                <button class="sec1button">Your best friend awaits!</button>
+            </a>
+             </div>    
+             </div>  
+         </div>
+    </section>
+           
+
+
+    <section class="section2" id="section2">
+    <div class="nav">
+        <div></div>
+     <div class="top">
+        <div class="hide"  > 
+            <h1  class="titlesec2"> Species</h1>
+            <div class="Dropdownbox">
+            <select id="petType" class="border" onchange="updateDropdowns()"  >
+                <option value="all">All Pets</option>
+                <option value="dogs">Dogs</option>
+                <option value="cats">Cats</option>
+              </select>
+            </div>
+        </div>
+
+        <div  class="hide" > 
+            <h1 id="1headingToRemove" class="titlesec2"> Breed</h1>
+            <div class="Dropdownbox">
+                <select  id="dogBreeds" class="border" >
+                    <option hidden ></option>
+                    <option value="labrador">Aspin</option>
+                    <option value="labrador">Unknown/Mixture</option>
+                    <option value="labrador">Beagle</option>
+                    <option value="labrador">Husky</option>
+                    <option value="labrador">Belgian Malinios</option>
+                    <option value="labrador">Bulldog</option>
+                    <option value="labrador">Pug</option>
+                    <option value="labrador">Chihuahua</option>
+                    <option value="labrador">Chow Chow</option>
+                    <option value="labrador">Corgi</option>
+                    <option value="germanShepherd">German Shepherd</option>
+                  </select>
+            </div>     
+        </div>
+
+        <div  class="hide" > 
+            <h1 id="2headingToRemove" class="titlesec2"> Colour</h1>
+            <div class="Dropdownbox">
+            <select id="catBreeds" class="border" >
+                <option ></option>
+                <option class="option" value="option1">Black</option>
+                <option class="option" value="option1">Blonde</option>
+                <option class="option" value="option1">Brown/Tan</option>
+                <option class="option" value="option1">Ginger</option>
+                <option class="option" value="option1">Grey</option>
+                <option class="option" value="option1">Red</option>
+                <option class="option" value="option1">White</option>
+                <option class="option" value="option1">Calico</option>
+
+              </select>
+            </div>
+        </div>
+
+      
+        <div  class="hide"> <button class="button">Reset</button> </div>
+        <div> <button class="button">Search</button> </div>
+        <div>
+            <a href="#divOne">
+                <button class="invbutton">More Filters</button>
+            </a>
+        </div>
+     </div> 
+    </div>
+
+    
+       
+<div class="hide1">
+    <div class="overlay" id="divOne">
+		<div class="wrapper">
+			<h1>Filter</h2><a class="close" href="#">&times;</a>
+			<div class="content">
+				<div style="color: orange;" class="container">
+					<form style="color: orange;">
+
+
+
+                        
+                        <h2 class="titlesec2">Species</h1>
+                            <div class="Dropdownbox">
+                                <select class="border" >
+                                    <option ></option>
+                                    <option class="option" value="option1">Dog</option>
+                                    <option class="option" value="option1">Cat</option>
+                 
+                                  </select>
+                            </div>
+
+						<h2 class="titlesec2"> Size</h1>
+						<div class="Dropdownbox">
+							<select id="catBreeds" class="border" >
+                                <option hidden ></option>
+                                <option class="option" value="option1">    Tiny (<5kg) </option>
+                                <option class="option" value="option1"> Small (5-10kg) </option>
+                                <option class="option" value="option1">Large (15-30kg)</option>
+                                <option class="option" value="option1"> Very Large (>30kg) </option>
+                              </select>
+                        </div>
+
+                        <h2 class="titlesec2">Gender</h1>
+						<div class="Dropdownbox">
+							<select class="border" >
+								<option ></option>
+								<option class="option" value="option1">Male</option>
+								<option class="option" value="option1">Female</option>
+								<option class="option" value="option1">Unknown</option>
+							  </select>
+                        </div>
+
+                        <h2 class="titlesec2">Colour</h1>
+						<div class="Dropdownbox">
+                            <select id="catBreeds" class="border" >
+                                <option ></option>
+                                <option class="option" value="option1">Black</option>
+                                <option class="option" value="option1">Blonde</option>
+                                <option class="option" value="option1">Brown/Tan</option>
+                                <option class="option" value="option1">Ginger</option>
+                                <option class="option" value="option1">Grey</option>
+                                <option class="option" value="option1">Red</option>
+                                <option class="option" value="option1">White</option>
+                                <option class="option" value="option1">Calico</option>
+                
+                              </select>
+                        </div>
+
+                    
+                    <div style="display: grid; grid-template-columns: 150px 150px; margin-bottom: 20px;">
+                    <div style="display: grid; grid-template-columns: 30px 1fr;">
+                    <input type="checkbox" class="checkbox">
+                    <h2 class="titlesec5"> Good with Cats</h1>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 30px 1fr;">
+                        <input type="checkbox" class="checkbox">
+                        <h2 class="titlesec5"> Good with Dogs</h1>
+                        </div>
+                    </div>
+
+
+
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <Button style="margin: 0 10px 0 10px;" class="button">Reset</Button>
+						<Button style="margin: 0 20px 0 10px;" class="button2">Search</Button>
+                    </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+     <div class="main">
+        <div class="side">
+            <div class="sidebar">
+                <div style=" margin-right:4%; margin-bottom: 4%;"> 
+                    <h1 class="titlesec2"> Size</h1>
+                    <div class="Dropdownbox">
+                        <select id="catBreeds" class="border" >
+                            <option hidden ></option>
+                            <option class="option" value="option1">    Tiny (<5kg) </option>
+                            <option class="option" value="option1"> Small (5-10kg) </option>
+                            <option class="option" value="option1">Large (15-30kg)</option>
+                            <option class="option" value="option1"> Very Large (>30kg) </option>
+                          </select>
+                    </div>
+                </div>
+
+                <div style=" margin-right:4%; margin-bottom: 16%;"> 
+                    <h1 class="titlesec2"> Sex</h1>
+                    <div class="Dropdownbox">
+                        <select class="border" >
+                            <option ></option>
+                            <option class="option" value="option1">Male</option>
+                            <option class="option" value="option1">Female</option>
+                            <option class="option" value="option1">Unknown</option>
+                          </select>
+                    </div>
+                </div>
+
+                
+
+           
+
+                
+
+
+            </div>
+        </div>
+
+  
+        <div class="gridcontainer">
+
+            <!-- Cat1  -->
+
+       <a href="./Preview/index.html">  
+        <div class="div"  data-aos="fade-up">
+                   <div class="preview">
+                       <div> <img class="thumbnail" src="src/cat1.jpg"> 
+                       <div class="grid">
+                          <div class="profile"><img class="profile-css" src="src/profile.jpg"></div> 
+                          <div class="description">
+                              <h1 class="titlesec"> Dasher</h1>
+                              <p class="year">1 year old</p>
+                          </div>         
+                          </div> 
+                      </div>
+                   </div>
+                  </div>          
+              </a>    
+
+
+              <!-- Dog1  -->
+
+       <a href="./Preview2/index.html">  
+        <div class="div"  data-aos="fade-up">
+                   <div class="preview">
+                       <div> <img class="thumbnail" src="src/Dog1.jpg"> 
+                       <div class="grid">
+                          <div class="profile"><img class="profile-css" src="src/profile1.jpg"></div> 
+                          <div class="description">
+                              <h1 class="titlesec">Cara</h1>
+                              <p class="year">10 years old</p>
+                          </div>         
+                          </div> 
+                      </div>
+                   </div>
+                  </div>          
+              </a>    
+
+
+                    <!-- Dog2  -->
+              
+       <a href="./Preview3/index.html">  
+        <div class="div"  data-aos="fade-up">
+                   <div class="preview">
+                       <div> <img class="thumbnail" src="src/Dog2.jpg"> 
+                       <div class="grid">
+                          <div class="profile"><img class="profile-css" src="src/profile2.jpg"></div> 
+                          <div class="description">
+                              <h1 class="titlesec">Oscar</h1>
+                              <p class="year">7 years old</p>
+                          </div>         
+                          </div> 
+                      </div>
+                   </div>
+                  </div>          
+              </a>    
+
+    <!-- Dog2  -->
+              
+       <a href="./Preview4/index.html">  
+        <div class="div"  data-aos="fade-up">
+                   <div class="preview">
+                       <div> <img class="thumbnail" src="src/cat2.jpg"> 
+                       <div class="grid">
+                          <div class="profile"><img class="profile-css" src="src/profile3.jpg"></div> 
+                          <div class="description">
+                              <h1 class="titlesec">Angel</h1>
+                              <p class="year">3 months old</p>
+                          </div>         
+                          </div> 
+                      </div>
+                   </div>
+                  </div>          
+              </a>    
+
+  <!-- Cat3  -->
+              
+       <a href="./Preview5/index.html">  
+        <div class="div"  data-aos="fade-up">
+                   <div class="preview">
+                       <div> <img class="thumbnail" src="src/cat3.jpg"> 
+                       <div class="grid">
+                          <div class="profile"><img class="profile-css" src="src/profile4.jpg"></div> 
+                          <div class="description">
+                              <h1 class="titlesec">Griffin</h1>
+                              <p class="year">1 year old</p>
+                          </div>         
+                          </div> 
+                      </div>
+                   </div>
+                  </div>          
+              </a>    
+            
+               </div>        
+
+             </div>       
+        </div> 
+    </section>
+
+
+
+    <footer>
+        <div class="container9">
+            <div class="row9">
+                <div class="col9" id="company9">
+                    <div>
+                        <img src="logo.png" alt="" class="logo9">
+                        <p style="top:px;">
+                            Find your new best friend!. Join us in making a difference by adopting your perfect companion today!
+                        </p></div>
+                    
+                </div>
+        
+              
+                <div class="col9" id="useful-links9">
+                    <h3>Links</h3>
+                    <div class="links9">
+                      
+            <a href="#">Adoption Process</a>
+            <a href="#"> Adoption Qualifications</a>
+            <a href="#">Post a Pet</a>
+                    </div>
+                </div>
+        
+                <div class="col9" id="contact9">
+                    <h3>Contact</h3>
+                    
+                    <div class="contact-details9">
+                        <i class="fa fa-location"></i>
+                       
+                        <p>San Jose Cawa-Cawa <br> Zamboanga City, Philippines</p>
+                    </div>
+                    <div class="contact-details9">
+                        <i class="fa fa-phone"></i>
+                        <p>+63 9708702132</p>
+                    </div>
+                </div>
+            </div>
+        
+            
+        </div>
+        
+     </footer>
+ 
+
+
+</body>
+</html>
+
+
+  <script>
+          function updateDropdowns() {
+  var petType = document.getElementById("petType").value;
+  var dogBreedsDropdown = document.getElementById("dogBreeds");
+  var catBreedsDropdown = document.getElementById("catBreeds");
+  var heading1 = document.getElementById("1headingToRemove");
+  var heading2 = document.getElementById("2headingToRemove");
+
+  if (petType === "dogs") {
+    dogBreedsDropdown.style.display = "block";
+    catBreedsDropdown.style.display = "block";
+    heading1.hidden = false;
+   
+  } else if (petType === "cats") {
+    dogBreedsDropdown.style.display = "none";
+    catBreedsDropdown.style.display = "block";
+    // Make heading1 hidden
+    if (heading1) {
+      heading1.hidden = true;
+    }
+  } else {
+    dogBreedsDropdown.style.display = "block";
+    catBreedsDropdown.style.display = "block";
+    heading1.hidden = false;
+  }
+}
+
+
+// Call updateDropdowns initially to set initial state
+updateDropdowns();
+            </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 3000,
+    once: true,
+  });
+
+  const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+const navbg = document.querySelector('.nav-bg');
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+    navbg.classList.toggle('active');
+});
+
+</script>
