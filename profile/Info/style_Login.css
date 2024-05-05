@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  font-family: Roboto;
+  justify-content:right;
+  align-items: center;
+  background-color: white;
+}
+
+
+
+.main{
+  margin: 1% 8% 2% 8% ;
+  display: flex;
+  justify-content:right;
+  border-radius: 5px;
+  flex-direction: row;
+  border: 1px solid rgba(28, 28, 28, 0.2);
+}
+
+
+.wrapper{
+  display: flex;
+  flex: 1.2;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  
+}
+
+
+a{
+  text-decoration: none;
+  display: block;
+  color: White;
+ padding: 7% 10% 7% 10%;
+  width: 100%;
+  border-bottom: 1px solid rgb(223, 223, 223);
+ 
+}
+
+a:hover{
+  background-color: orange;
+}
+.links{
+  color: black;
+}
+.sidebar{
+  border-right: 1px solid rgb(223, 223, 223);
+  width: 100%;
+}
+
+
+
+
+
+.wrapper2{
+  flex: 4;
+  background: transparent;
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+    align-items: center;
+    
+}
+
+.profile{
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  margin: 15px 0 10px 20px;
+
+}
+
+.button{
+  margin-left:10px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  background: transparent;
+  border-width: 1px;
+}
+
+.button2{
+  border: none;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-left:70px;
+  width: 70px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.top{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 110px 100px 100px;
+  height: 121px;
+  align-items: center;
+  border-bottom: #fff;
+  margin-bottom: 30px;
+}
+
+.info{
+  width: 100%;
+  justify-content: space-between;
+}
+
+h2{
+  margin: 100px 0 0 8% ;
+}
+p{
+  margin: 5px  0 8px 20px;
+  color: black;
+}
+
+.input{
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  width: 90%;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color:solid #f8f8f8;
+}
+
+.inputbio{
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 70px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color:solid #f8f8f8;
+}
+
+.inputlast{
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color:solid #f8f8f8;
+  
+}
+
+.Save{
+  color: white;
+  background-color: orange;
+  border-color: orange;
+  padding: 9px;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.bottom{
+  justify-content: left;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+
+
+.header {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:54.2px;
+  padding: 20px 0 20px 0;
+  background: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 100;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.header{
+ 
+  margin: 0;
+}
+.bx bx-menu
+{
+  padding: 0;
+  margin: 0;
+}
+.header:hover::before {
+  left: 100%;
+}
+.logo {
+  margin-left: 100px;
+  margin-right: 40px;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  cursor: default;
+}
+
+
+
+
+.Login{
+  padding: 7px 20px 7px 20px;
+  margin-right: 90px;
+  border-radius: 15px;
+  color: orange;
+  border-style: none;
+  transition: color 1s, opacity 1s, 
+background-color 1s, box-shadow 1s;
+}
+
+
+.Login:hover{
+  color: orange;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.30);
+  
+}
+
+
+.navbar a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: black;
+}
+
+
+
+
+
+
+a.hatdog{
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+@media(max-width: 574px){
+
+
+  .logo {
+    margin-left: 10%;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    cursor: default;
+  }
+.nav-bg {
+  position: absolute;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 99;
+  display: none;
+  height: 1000%;
+  width: 1000%;
+}
+.nav-bg.active {
+  display: block;
+}
+
+}
